@@ -8,10 +8,19 @@ box-sizing: border-box;
 box-sizing: border-box;
 }
 
+:root {
+--primary-white-color: #ffffff;
+--primary-black-color: #000000;
+--cerulean-color: #0073a0;
+--yellow-color: #f8a93b;
+--bright-red-color: #971d39;
+}
+
+
 body {
 margin: 0;
-background-color: #ffffff;
-color: #000000;
+background-color: var(--primary-white-color);
+color: var(--primary-black-color);
 }
 
 @font-face {
@@ -56,7 +65,7 @@ max-width: 100%;
 height: auto;
 }
 
-.conteiner{
+.container{
 position: relative;
 display: block;
 margin: auto;
@@ -83,7 +92,7 @@ align-items: center;
 .time{
 font-size: 266px;
 font-family: "AvenirNextCondensed DemiBoldItalic";
-color: rgb( 0, 115, 160 );
+color: var(--cerulean-color);
 font-weight: bold;
 font-style: Italic;
 line-height: 1.3;
@@ -92,15 +101,15 @@ line-height: 1.3;
 .promotion{
 padding-top: 72px;
 padding-bottom: 220px;
-background-color: #971d39;
-color: #ffffff;
+background-color: var(--bright-red-color);
+color: var(--primary-white-color);
 font-size: 153px;
 font-family: "AvenirNextCondensed Medium";
 line-height: 1.3;
 }
 
 .free{
-color: #f8a93b;
+color: var(--yellow-color);
 font-size: 186px;
 font-family: "AvenirNextCondensed DemiBolt";
 font-weight: bold;
@@ -132,17 +141,17 @@ align-items: center;
 }
 
 .first__part{
-border-bottom: 125px solid #971d39;
+border-bottom: 125px solid var(--bright-red-color);
 }
 
 .second__part{
-border-bottom: 125px solid #0073a0;
+border-bottom: 125px solid var(--cerulean-color);
 }
 
 .getstuff{
 font-size: 120px;
 font-family: "AvenirNextCondensed DemiBolt";
-color: rgb( 248, 169, 59 );
+color: var(--yellow-color);
 line-height: 1.2;
 margin-left: 33px;
 }
@@ -152,8 +161,7 @@ display: flex;
 justify-content: center;
 font-size: 253px;
 font-family: "AvenirNextCondensed Medium";
-color: rgb( 255, 255, 255 );
-line-height: 1.3;
+color: var(--primary-white-color);
 }
 
 .price{
@@ -161,8 +169,7 @@ display: flex;
 justify-content: center;
 font-size: 239px;
 font-family: "AvenirNextCondensed Medium";
-color: rgb( 248, 169, 59 );
-line-height: 1.3;
+color: var(--yellow-color);
 }
 
 .second{
@@ -173,7 +180,7 @@ font-size: 202px;
 display: flex;
 flex-direction: column;
 justify-content: center;
-background-color: #971d39;
+background-color: var(--bright-red-color);
 border-radius: 50%;
 width: 793px;
 height: 793px;
@@ -183,7 +190,7 @@ height: 793px;
 display: flex;
 flex-direction: column;
 justify-content: center;
-background-color: #0073a0;
+background-color: var(--cerulean-color);
 border-radius: 50%;
 width: 793px;
 height: 793px;
@@ -196,6 +203,8 @@ left: 0;
 }
 
 .shirt{
+margin-top: 42px;
+margin-bottom: 6px;
 z-index: 3;
 }
 
@@ -203,7 +212,6 @@ z-index: 3;
 margin-top: 59px;
 font-size: 144px;
 font-family: "AvenirNextCondensed Medium";
-color: rgb( 0, 0, 0 );
 line-height: 1.2;
 }
 
@@ -211,7 +219,6 @@ line-height: 1.2;
 margin-right: 67px;
 font-size: 124px;
 font-family: "AvenirNextCondensed DemiBolt";
-color: rgb( 0, 0, 0 );
 font-weight: bold;
 line-height: 1.2;
 }
@@ -219,23 +226,18 @@ line-height: 1.2;
 .code{
 font-size: 71px;
 font-family: "AvenirNextCondensed Medium";
-color: rgb( 0, 0, 0 );
-line-height: 1.2;
 }
 
 .end{
 font-size: 54px;
 font-family: "AvenirNextCondensed Medium";
-color: rgb( 0, 0, 0 );
 line-height: 1.2;
 }
 
 .style{
-display: flex;
-justify-content: flex-end;
 font-size: 70px;
 font-family: "AvenirNextCondensed Medium";
-color: #ffffff;
+color: var(--primary-white-color);
 line-height: 1.3; 
 position: absolute;
 right: 55px;
@@ -248,7 +250,6 @@ margin-bottom: 23px;
 text-align: center;
 font-size: 125px;
 font-family: "AvenirNextCondensed Medium";
-color: rgb( 0, 0, 0 );
 line-height: 1.2;
 }
 
@@ -263,7 +264,7 @@ text-align: center;
 
 .free::after{
 display: block;
-background-color: #0073a0;
+background-color: var(--cerulean-color);
 height: 116px;
 }
 
@@ -290,12 +291,11 @@ position: absolute;
 top: 2312px;
 width: 100%;
 height: 116px;
-background-color: #0073a0;
-
+background-color: var(--cerulean-color);
 } 
 
 .blue-strip{
 position: absolute;
-top: 4106px;
+top: 4159px;
 z-index: -1;
 }
