@@ -90,6 +90,7 @@ align-items: center;
 }
 
 .time{
+margin: 0;
 font-size: 266px;
 font-family: "AvenirNextCondensed DemiBoldItalic";
 color: var(--cerulean-color);
